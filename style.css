@@ -87,8 +87,8 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 75%;
-    height: 35%;
+    width: 15rem;
+    height: 15rem;
   }
 
   .box {
@@ -110,6 +110,7 @@ h1 {
   }
 
   .start_button {
+    margin-top: 1rem;
     padding: 5% 10% 5% 10%;
   }
 
