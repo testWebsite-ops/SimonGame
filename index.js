@@ -139,3 +139,13 @@ $(document).on("keydown", function () {
     console.log("game has started");
   }
 });
+
+$(document).on("click", function () {
+  if (gameStatus === true) {
+    newSequence(buttonsArray, buttonsArray.length, simonSequence);
+    start(currentLevel);
+    gameStatus = false;
+  } else {
+    console.log("game has started");
+  }
+});
