@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   background: #011f3f;
   text-align: center;
+  font-family: "Press Start 2P", cursive;
 }
 
 .wrong {
@@ -13,7 +14,6 @@ body {
 }
 
 h1 {
-  font-family: "Press Start 2P", cursive;
   color: #fef2bf;
   font-size: 3rem;
   margin-bottom: 10%;
@@ -33,6 +33,14 @@ h1 {
   height: 35%;
   border: 0.8rem solid black;
   border-radius: 20%;
+}
+
+.hidden{
+  display: none;
+}
+
+.short_text {
+  display: none;
 }
 
 .red {
@@ -56,6 +64,10 @@ h1 {
   background-color: grey;
 }
 
+.start_button {
+  display: hidden;
+}
+
 @media only screen and (max-width: 992px) {
 }
 
@@ -63,27 +75,45 @@ h1 {
 }
 
 @media only screen and (max-width: 576px) {
-
   h1 {
-  font-family: "Press Start 2P", cursive;
-  color: #fef2bf;
-  font-size: 1.5rem;
-  margin: 5% 8% 10% 8%;
-}
+    font-family: "Press Start 2P", cursive;
+    color: #fef2bf;
+    font-size: 1.5rem;
+    margin: 5% 8% 10% 8%;
+  }
 
   .container {
-  margin: 30% auto 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 75%;
-  height: 35%;
-}
+    margin: 20% auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 35%;
+  }
 
-.box {
-  width: 5rem;
-  height: 5rem;
-  border: 0.8rem solid black;
-  border-radius: 20%;
-}
+  .box {
+    width: 5rem;
+    height: 5rem;
+    border: 0.8rem solid black;
+    border-radius: 20%;
+  }
+
+  .start_button {
+    margin: auto;
+    background-color: #fef2bf;
+    border-radius: 1rem;
+    width: 35%;
+  }
+
+  .short_text {
+    display: inline-block;
+  }
+
+  .start_button {
+    padding: 5% 10% 5% 10%;
+  }
+
+  .long_text {
+    display: none;
+  }
 }

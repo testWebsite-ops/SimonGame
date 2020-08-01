@@ -71,9 +71,10 @@ function checkUserInput(userArray, sequenceArray) {
       validator = 0;
       console.log("you lost sucker");
       restart();
+      $(".start_button").toggleClass("hidden");
       var gameOver = new Audio("sounds/wrong.mp3");
       $("body").toggleClass("wrong");
-      $("h1").text("Game Over, Press Any Key to Restart");
+      $("h1").text("Game Over.... Lameeeeee");
       setTimeout(function () {
         $("body").toggleClass("wrong");
         gameOver.play();
@@ -140,11 +141,12 @@ $(document).on("keydown", function () {
   }
 });
 
-$(document).on("click", function () {
+$(".start_button").on("click", function () {
   if (gameStatus === true) {
     newSequence(buttonsArray, buttonsArray.length, simonSequence);
     start(currentLevel);
     gameStatus = false;
+    $(".start_button").toggleClass("hidden");
   } else {
     console.log("game has started");
   }
